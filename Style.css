@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.hero_sec{
+    
+     background-image: linear-gradient(
+        to right bottom,
+        rgba(1, 1, 49, 0.33),
+        /* rgba(60, 60, 235, 0.181) */
+        rgba(141, 37, 37, 0.43)
+
+
+     ), url("game-zone3.jpg"); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     color: white;
+     height: 50vh;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    align-items: center;
+}
+.head{
+    color: aliceblue;
+    font-size: 90px;
+    
+}
+.para{
+    color: aliceblue;
+   
+    font-size: 20px;
+}
+/* Rock - paper scissor */
+.box{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    
+}
+.Rock{
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(224, 78, 243, 0.33),
+        /* rgba(60, 60, 235, 0.181) */
+        rgba(212, 100, 186, 0.367)
+        ), url("rock.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 30%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px;
+}
+.Paper{
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(60, 2, 96, 0.333),
+        /* rgba(60, 60, 235, 0.181) */
+        rgba(205, 133, 236, 0.43)
+        ), url("paper.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 30%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px;
+}
+
+.Scissors{
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(1, 1, 49, 0.33),
+        /* rgba(60, 60, 235, 0.181) */
+        rgba(135, 170, 246, 0.51)
+        ), url("scissors.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 30%;
+    border-radius: 100%;
+    border-color: rgb(225, 245, 248);
+    box-shadow: 0px 0px 20px;
+}
+.res{
+    /* border: 5px solid black; */
+    /* padding: 100px; */
+    margin-top: 100px;
+    color: red ;
+    text-align: center;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.head {
+    animation: slideInLeft 1s ease-in duration timing-function delay iteration-count direction fill-mode;
+}
+.body{
+    background-image: url("bg image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* friend game */
+
+.frnd-box{
+    background-image: /*linear-gradient(
+        to right bottom,
+        rgba(49, 21, 1, 0.234),
+        
+        rgba(141, 96, 37, 0.43)
+     ),*/ url("card.jpg"); 
+     /* background-position: center; */
+     background-repeat: no-repeat;
+     background-size: cover;
+     color: red;
+     height: 150vh;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    gap: 60px; 
+}
+#user{
+    border-color: pink;
+    height: 100px;
+    width: 300px;
+    border-width: 5px;
+    border-radius: 50%;
+
+    text-align: center;
+    color: purple;
+}
+#frnd{
+    border-color: pink;
+    height: 100px;
+    width: 300px;
+    border-width: 5px;
+    border-radius: 50%;
+
+    text-align: center;
+    color: purple;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .word { font-size: 24px; margin: 20px; letter-spacing: 10px; }
+        .message { font-size: 18px; margin-top: 20px; color: red; }
+        .stages { font-family: monospace; white-space: pre; }
+        .letter-btn { padding: 10px; margin: 5px; font-size: 18px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Hangman Game</h1>
+    <p>Guess the word by clicking the letters below:</p>
+
+    <div class="stages" id="hangmanStage"></div>
+
+    <div class="word" id="wordDisplay">_ _ _ _ _</div>
+    
+    <div id="letters"></div>
+
+    <p class="message" id="message"></p>
+
+    <button onclick="resetGame()">Restart</button>
+
+    <script src="hang.js"></script> <!-- Linking JavaScript file -->
+</body>
+</html>
